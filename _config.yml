@@ -1,0 +1,7 @@
+title: "Carzap"
+name: Carzap"
+url: url do projeto
+
+exclude: [node_modules, dev]
+
+host:    0.0.0.0
