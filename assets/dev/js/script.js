@@ -4,7 +4,7 @@
 
 
 $('.button-trigger').click(function() {
-    if($(this).hasClass('active')) {
+    if ($(this).hasClass('active')) {
         $(this).removeClass('active');
     } else {
         $(this).addClass('active');
@@ -12,9 +12,9 @@ $('.button-trigger').click(function() {
     $('.menu-trigger').slideToggle();
 });
 
- $(".user-info-pic").click(function() {
-     $(".drop-user-info").toggle();
-      });
+$(".user-info-pic").click(function() {
+    $(".drop-user-info").toggle();
+});
 
 
 
@@ -40,6 +40,53 @@ $('#products-gallery-list').magnificPopup({
     }
 });
 
+// fotos produto
+$(document).ready(function() {
+    $.uploadPreview({
+        input_field: "#image-upload-1",
+        preview_box: "#image-preview-1",
+        label_field: "#image-label-1",
+        label_default: "Adicionar foto",
+        label_selected: "Trocar a foto",
+        no_label: false
+    });
+
+    $.uploadPreview({
+        input_field: "#image-upload-2",
+        preview_box: "#image-preview-2",
+        label_field: "#image-label-2",
+        label_default: "Adicionar foto",
+        label_selected: "Trocar a foto",
+        no_label: false
+    });
+
+    $.uploadPreview({
+        input_field: "#image-upload-3",
+        preview_box: "#image-preview-3",
+        label_field: "#image-label-3",
+        label_default: "Adicionar foto",
+        label_selected: "Trocar a foto",
+        no_label: false
+    });
+
+    $.uploadPreview({
+        input_field: "#image-upload-4",
+        preview_box: "#image-preview-4",
+        label_field: "#image-label-4",
+        label_default: "Adicionar foto",
+        label_selected: "Trocar a foto",
+        no_label: false
+    });
+
+    $.uploadPreview({
+        input_field: "#image-upload-5",
+        preview_box: "#image-preview-5",
+        label_field: "#image-label-5",
+        label_default: "Adicionar foto",
+        label_selected: "Trocar a foto",
+        no_label: false
+    });
+});
 
 
 $(document).foundation();
